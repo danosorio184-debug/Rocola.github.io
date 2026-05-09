@@ -1,4 +1,3 @@
-// Lista de 10 canciones en carpeta "canciones"
 const canciones = [
   "canciones/「NIGHT DANCER」 (COVER ESPAÑOL) - imase - 【Ssac Tellme】.mp3",
   "canciones/Chayanne - Torero.mp3",
@@ -16,10 +15,8 @@ let indice = 0;
 const player = document.getElementById("player");
 const lista = document.getElementById("lista");
 
-// Cargar la primera canción
 player.src = canciones[indice];
 
-// Mostrar lista de canciones
 canciones.forEach((cancion, i) => {
   const item = document.createElement("li");
   item.textContent = `Canción ${i+1}`;
